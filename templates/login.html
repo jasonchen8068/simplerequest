@@ -5,6 +5,20 @@
     <title>登录</title>
 </head>
 <body>
-
+<div>
+    <h2 align="center">Welcome to SimpleRequest</h2>
+    <div>
+        <p>用户登录</p>
+        <form action="/api/login" role="form" method="post" id="login">
+            <div>
+                <input type="text" name="account" id="id_username" class="login" placeholder="请输入用户名">
+            </div>
+            <div>
+                <input type="text" name="password" id="id_password" class="login" placeholder="请输入密码">
+            </div>
+            <button id="login" type="submit">登录</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
