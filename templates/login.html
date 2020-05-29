@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>登录</title>
 </head>
-<body>
+<body background="../static/img/milky-way.jpg" style=" background-repeat:no-repeat ; background-size:100% 100%; background-attachment: fixed;">
 <div>
-    <h2 align="center">Welcome to SimpleRequest</h2>
+    <h2 style="color: white">Welcome to SimpleRequest</h2>
     <div>
-        <p>用户登录</p>
+        <p style="top: 2000px ; color: white">用户登录</p>
         <form action="/api/login" role="form" method="post" id="login">
             <div>
                 <input type="text" name="account" id="id_username" class="login" placeholder="请输入用户名">
@@ -16,9 +16,15 @@
             <div>
                 <input type="text" name="password" id="id_password" class="login" placeholder="请输入密码">
             </div>
-            <button id="login" type="submit">登录</button>
+            <p style="color: white">{{ errors }}</p>
+            <button id="login" type="submit" >登录</button>
         </form>
     </div>
 </div>
+<style type="text/css">
+    div{
+            text-align: center;
+        }
+</style>
 </body>
 </html>

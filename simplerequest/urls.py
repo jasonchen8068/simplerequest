@@ -20,6 +20,6 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', views.login),
+    url(r'^$', views.index),
     url('api/login', views.login)
 ]
